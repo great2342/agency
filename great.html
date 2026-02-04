@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Agency Recruitment | Picsly Live</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            background: radial-gradient(circle at top right, #1e1b4b, #050112); 
+            color: white; 
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+        }
+        .premium-glass {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .text-glow-purple {
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+        }
+        .whatsapp-gradient {
+            background: linear-gradient(135deg, #25D366 0%, #075E54 100%);
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3);
+        }
+        .floating-diamond {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+        .copy-banner {
+            background: rgba(37, 211, 102, 0.15);
+            border: 1px dashed rgba(37, 211, 102, 0.5);
+        }
+        #toast {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #25D366;
+            color: black;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 900;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <div id="toast">COPIED TO CLIPBOARD ✅</div>
+
+    <div class="absolute top-20 -left-20 w-64 h-64 bg-purple-600/20 blur-[100px]"></div>
+    <div class="absolute top-40 -right-20 w-64 h-64 bg-blue-600/10 blur-[100px]"></div>
+
+    <div class="relative pt-16 pb-12 px-6 text-center overflow-hidden">
+        <div class="floating-diamond inline-block mb-6">
+            <div class="w-20 h-20 bg-gradient-to-tr from-purple-500 to-blue-500 rounded-3xl flex items-center justify-center shadow-2xl">
+                <i class="fas fa-handshake text-4xl text-white"></i>
+            </div>
+        </div>
+        <h1 class="text-4xl font-black italic uppercase tracking-tight text-glow-purple leading-none mb-2">
+            Agency<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Cooperation</span>
+        </h1>
+        <p class="text-gray-400 font-medium tracking-widest text-[10px] uppercase">Official Partnership Program</p>
+    </div>
+
+    <div class="px-6 space-y-8">
+        
+        <div class="premium-glass p-8 text-center relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+            
+            <p class="text-[10px] font-bold text-green-400 uppercase tracking-widest mb-4">Official Recruitment WhatsApp</p>
+            
+            <div class="cursor-pointer" onclick="copyNum('+2348103027646')">
+                <h2 class="text-3xl font-black tracking-tighter text-white mb-2">+234 810 302 7646</h2>
+                <div class="copy-banner py-2 rounded-xl inline-flex items-center px-4 gap-2 transition-all active:scale-95">
+                    <i class="fas fa-copy text-green-500 text-xs"></i>
+                    <span class="text-[11px] font-bold text-green-500 uppercase">Tap to copy number</span>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-white/10 pt-6 grid grid-cols-2 gap-4">
+                <div class="text-left">
+                    <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Commission</p>
+                    <p class="text-xl font-black text-white italic">5% - 20%</p>
+                </div>
+                <div class="text-right border-l border-white/10 pl-4">
+                    <p class="text-[10px] text-gray-500 uppercase font-bold mb-1">Payouts</p>
+                    <p class="text-xl font-black text-white italic">Weekly</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://wa.me/2348103027646?text=Hello,%20I%20am%20interested%20in%20Picsly%20Live%20Agency%20Recruitment." 
+           class="whatsapp-gradient w-full py-5 rounded-[2rem] flex items-center justify-center gap-4 text-black font-black text-lg tracking-tight uppercase shadow-2xl transition-all active:scale-95">
+            <i class="fab fa-whatsapp text-3xl"></i>
+            Contact Agency Lead
+        </a>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div class="premium-glass p-5 border-t border-white/10">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mb-3">
+                    <i class="fas fa-chart-line text-blue-400"></i>
+                </div>
+                <h4 class="text-xs font-black uppercase mb-1">Fast Growth</h4>
+                <p class="text-[9px] text-gray-500 leading-relaxed">Scale your team with our global traffic and promotion tools.</p>
+            </div>
+            <div class="premium-glass p-5 border-t border-white/10">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center mb-3">
+                    <i class="fas fa-user-shield text-purple-400"></i>
+                </div>
+                <h4 class="text-xs font-black uppercase mb-1">Support</h4>
+                <p class="text-[9px] text-gray-500 leading-relaxed">24/7 dedicated account manager for your Agency.</p>
+            </div>
+        </div>
+
+        <p class="text-[10px] text-center text-gray-600 px-10 leading-loose">
+            Join the elite circle of Picsly Live partners. Secure your Agency management dashboard today.
+        </p>
+
+    </div>
+
+    <script>
+        function copyNum(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => {
+                    toast.style.display = 'none';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
